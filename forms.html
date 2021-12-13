@@ -2,45 +2,48 @@
 <html>
 
 <head>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <!--Custom CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>FORM</title>
     <link href="forms.css" rel="stylesheet" type="text/css">
     <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.4.1.js"></script>
-    <script src="forms.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
+    <!--Custom jquery scrip-->
+    <script src="forms.js"></script>
+    <title>A Fantastic Adventure</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>SIGN IN</h1>
-        <div class="blanks">
+        <h1>SIGN IN!</h1>
+        <div id="blanks">
             <form>
                 <div>
                     <label>Email</label>
                     <input id="email" type="text" class="form-control">
                 </div>
-                <!--Input type checkbox-->
-                <div class="radio">
-                    <input type="radio" value="rememberMe" name="signin" checked>
-                    <label>Remember Me</label>
-                </div>
-                <button type="submit" class="btn btn-info">LOGIN</button>
+                <br>
             </form>
             <div>
-                <ul>
-                    <p>Here are your login details:</p>
-                    <li><span class="email"> Email</span></li>
-                    <li><span class="password">Password</span></li>
-                </ul>
+                <label>Password</label>
+                <input id="password" type="password" class="form-control">
             </div>
-        </div>
+          
+        <div class="radio">
+            <input type="checkbox" value="remeberMe" name="signin">
+            <label>Remember Me</label>
 
+        </div>
+        <button type="submit" class="btn btn-info">LOGIN</button>
+        </form>
     </div>
+    <div>
+        <p>Here are your login details:<br><strong>Email:</strong><span class="email">. <br></b><strong>Password:</strong></span><span class="password"></span></p>
+    </div>
+    
 </body>
 
 </html>
